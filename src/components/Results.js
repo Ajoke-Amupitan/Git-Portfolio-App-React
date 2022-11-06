@@ -13,9 +13,9 @@ const Results = (props) => {
     repos.length !== 0 ? (
       repos.data.map((item) => (
         <li key={item.id}>
-          <a href="#" onClick={handleChange}>
+          <button href="#" onClick={handleChange}>
             {item.name}
-          </a>
+          </button>
         </li>
       ))
     ) : (

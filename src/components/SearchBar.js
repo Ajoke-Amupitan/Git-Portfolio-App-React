@@ -15,7 +15,7 @@ const SearchBar = () => {
 
     try {
       const result = await axios(
-        `https://api.github.com/users/Sammylaw23/repos`
+        `https://api.github.com/users/Ajoke-amupitan/repos`
       );
 
       setRepos(result);
@@ -31,7 +31,7 @@ const SearchBar = () => {
   console.log(repos);
   return (
     <>
-      <div>
+      {/* <div>
         <input
           type="text"
           placeholder="search"
@@ -39,7 +39,7 @@ const SearchBar = () => {
           onChange={handleChange}
         />
         <button onClick={handleClick}>Search</button>
-      </div>
+      </div> */}
       <Results repos={repos} />
     </>
   );
