@@ -4,7 +4,7 @@ import axios from "axios";
 const RepoDetails = (props) => {
   handleClick(props.repoName);
 
-  return (<h2>Repo Detail</h2>), "Repo namessssss: " + props.repoName;
+  return (<h2>Repo Detail</h2>), "Repo Detail: " + props.repoName;
 };
 
 const handleClick = async (repoName) => {

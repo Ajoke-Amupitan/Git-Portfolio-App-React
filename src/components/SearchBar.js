@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Results from "./Results";
 
@@ -15,7 +15,7 @@ const SearchBar = () => {
 
     try {
       const result = await axios(
-        `https://api.github.com/users/${searchInput}/repos`
+        `https://api.github.com/users/Sammylaw23/repos`
       );
 
       setRepos(result);
@@ -23,6 +23,10 @@ const SearchBar = () => {
       console.log(err);
     }
   };
+
+  useEffect(() => {
+    handleClick();
+  }, []);
 
   console.log(repos);
   return (
