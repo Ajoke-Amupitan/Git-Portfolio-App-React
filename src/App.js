@@ -1,17 +1,17 @@
 import "./App.css";
-import RepoDetails from "./components/RepoDetails";
 import SearchBar from "./components/SearchBar";
 import UserProfile from "./components/UserProfile";
+import Profile from "./components/Profile";
 
 function App() {
   return (
     <>
-      <div class="nav-content-container">
+      <div className="nav-content-container">
         <h1>GitHub Portfolio</h1>
       </div>
-      <div class="sidebar-content-container">
+      <div className="sidebar-content-container">
         <h1>Profile</h1>
-        <UserProfile />
+        <Profile />
       </div>
       <div class="content-container">
         <h1>Repositories</h1>

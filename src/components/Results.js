@@ -25,7 +25,7 @@ const Results = (props) => {
     <>
       <div>
         <ul>{listRepos}</ul>
-        <RepoDetails repoName={repoName} />
+        {/* <RepoDetails repoName={repoName} /> */}
       </div>
     </>
   );

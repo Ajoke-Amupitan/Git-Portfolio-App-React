@@ -11,11 +11,11 @@ const SearchBar = () => {
   };
 
   const handleClick = async () => {
-    console.log(searchInput);
+    //console.log(searchInput);
 
     try {
       const result = await axios(
-        `https://api.github.com/users/Ajoke-amupitan/repos`
+        `https://api.github.com/users/Sammylaw23/repos`
       );
 
       setRepos(result);
